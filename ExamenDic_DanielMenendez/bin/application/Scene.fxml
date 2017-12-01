@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<fx:root prefHeight="600.0" prefWidth="400.0" style="-fx-background-image: C:\Users\Ripley\workspace_interface\recursos\image.ong;" stylesheets="@application.css" type="AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="409.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../recursos/fondo.PNG" />
+         </image>
+      </ImageView>
+      <Pane id="pane1" fx:id="pane1" layoutX="65.0" layoutY="95.0" prefHeight="410.0" prefWidth="287.0" style="-fx-background-radius: 50px; -fx-background-color: white;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="62.0" layoutY="336.0" prefHeight="34.0" prefWidth="72.0" style="-fx-background-color: #00ad74; -fx-background-radius: 20;" text="SIGN UP" textFill="WHITE" />
+            <JFXButton buttonType="RAISED" layoutX="152.0" layoutY="336.0" onAction="#nextAction" prefHeight="34.0" prefWidth="72.0" style="-fx-background-color: #00ad74; -fx-background-radius: 20;" text="SIGN IN" textFill="WHITE">
+               <tooltip>
+                  <Tooltip text="Next" />
+               </tooltip>
+            </JFXButton>
+            <ImageView layoutX="38.0" layoutY="187.0" opacity="0.44">
+               <image>
+                  <Image url="@../../../recursos/email.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="38.0" layoutY="234.0" opacity="0.46">
+               <image>
+                  <Image url="@../../../recursos/Security-Password.png" />
+               </image>
+            </ImageView>
+            <JFXTextField layoutX="92.0" layoutY="193.0" promptText="Usermail" unFocusColor="#00ab72">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField layoutX="92.0" layoutY="239.0" promptText="Password" unFocusColor="#00ad74">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXPasswordField>
+            <ImageView id="Fotele" fitHeight="70.0" fitWidth="77.0" layoutX="105.0" layoutY="90.0">
+               <image>
+                  <Image url="@../../../recursos/logo.png" />
+               </image>
+            </ImageView>
+            <Pane prefHeight="58.0" prefWidth="287.0" style="-fx-background-color: #00ad74; -fx-background-radius: 50 50 00 00;" />
+            <Label layoutX="105.0" layoutY="12.0" text="DANIEL" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane id="pane2" fx:id="pane2" layoutX="65.0" layoutY="96.0" prefHeight="410.0" prefWidth="287.0" style="-fx-background-color: white; -fx-background-radius: 65px;" visible="false">
+         <children>
+            <JFXButton layoutX="108.0" layoutY="335.0" onAction="#backAction" prefHeight="34.0" prefWidth="72.0" style="-fx-background-color: #00ad74; -fx-background-radius: 20px;" text="Return" textFill="WHITE">
+               <tooltip>
+                  <Tooltip text="Return" />
+               </tooltip>
+            </JFXButton>
+            <JFXTextField alignment="CENTER" layoutX="54.0" layoutY="186.0" prefHeight="25.0" prefWidth="181.0" style="-fx-background-color: #00ad74;" text="You're in!" unFocusColor="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXTextField>
+            <Pane prefHeight="58.0" prefWidth="287.0" style="-fx-background-color: #00ad74; -fx-background-radius: 50 50 00 00;" />
+            <Label layoutX="106.0" layoutY="12.0" text="DANIEL" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</fx:root>
